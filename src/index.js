@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './app';
+import style from './style.css'
+import store from './redux'
 
-ReactDom.render(<App/>, document.getElementById('root'));
+ReactDom.render(<App store={store}/>, document.getElementById('root'));
 
 
 if(module.hot) {

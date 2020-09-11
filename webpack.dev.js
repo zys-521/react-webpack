@@ -25,7 +25,8 @@ module.exports = merge(common, {
                 test: /\.css$/,
                 use: [
                     'style-loader',
-                    'css-loader'
+                    'css-loader',
+                    'postcss-loader'
                 ]
             },
             {
@@ -53,7 +54,9 @@ module.exports = merge(common, {
     devServer: {
         port: 8000,
         contentBase: './dist',
-        hot: true
+        hot: true,
+        inline:true,
+	    historyApiFallback:true
     },
     plugins: [
         // 会显示HMR模块的相对路径

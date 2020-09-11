@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // 通过 npm 安装
 const webpack = require('webpack'); // 用于访问内置插件
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const postcssPxToViewport = require('postcss-px-to-viewport');
 
 module.exports = {
     entry: {
