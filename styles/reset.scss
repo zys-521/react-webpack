@@ -1,0 +1,62 @@
+/**
+ * @author wuaixiaoyao
+ * @date 2019/9/23
+ * @Description: 重置样式
+*/
+@import "./mixins";
+@import "./variables";
+body :global(.am-toast-notice-content .am-toast-text){
+  max-width: 300px;
+  position: absolute;
+  z-index: 3999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  opacity: 0.9;
+  background: #343542;
+  border-radius: 2px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  div{
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+}
+.prism-player .prism-big-play-btn{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  -moz-transform: rotate(-50%, -50%) !important;
+  -o-transform: rotate(-50%, -50%) !important;
+  /* opera*/
+  -ms-transform: rotate(-50%, -50%) !important;
+  /* IE 9 */
+  -webkit-transform: rotate(-50%, -50%) !important;
+}
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+.live-video{
+  position:relative;
+  left:0%;
+}
+
+.prism-progress-cursor {
+  margin-left: 0px !important;
+}
+.minirefresh-upwrap{
+  padding: 20px 0 !important;
+  .upwrap-tips{
+    height: 20px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: $line-color !important;
+  }
+}
+
