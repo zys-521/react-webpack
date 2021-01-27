@@ -1,0 +1,128 @@
+/**
+ * @author wuaixiaoyao
+ * @date 2019/9/23
+ * @Description:
+*/
+@import "./variables";
+@import "./mixins";
+.mar-top-16 {
+  margin-top: 16px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.cut-off-view {
+  height: 10px;
+  width: 100%;
+  background-color: #F7F7FA;
+}
+
+.hr-line {
+  height: 0;
+  border-bottom: 1px solid #FFFEFF;
+}
+
+// 1 像素
+.one-px {
+  height: 1px;
+  @include one-px-bottom-line();
+  //@include hairline('bottom', #CACACA);
+}
+
+.one-px-shallow-line{
+  @include hairline('bottom', #505050);
+  box-shadow: 0 0.5px 0 0 #505050;
+}
+
+@svg square {
+  height: 2px;
+  @rect {
+    fill: var(--color, black);
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.one-px-border-view {
+  border: 1px solid;
+  border-image: svg(square param(--color #FFFEFF)) 1 stretch;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: $placeholder-color;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $placeholder-color;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $placeholder-color;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: $placeholder-color;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+  background: transparent;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hidden-input {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
