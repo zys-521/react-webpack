@@ -40,6 +40,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
+    "@cpin/cpin-icon": "^1.1.6",
+    "ahooks": "^2.0.1",
     "core-js": "^3.6.5",
     "imports-loader": "^1.1.0",
     "jquery": "^3.5.1",

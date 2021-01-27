@@ -1,7 +1,7 @@
   module.exports = {
     plugins: {
         // 'autoprefixer': {},
-        'postcss-px-to-viewport': { 
+        'postcss-px-to-viewport': {
             unitToConvert: 'px', // 要转化的单位
             viewportWidth: 750, // UI设计稿的宽度
             unitPrecision: 6, // 转换后的精度，即小数点位数

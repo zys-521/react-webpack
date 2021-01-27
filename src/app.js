@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import Login from './pages/login';
 import Home from './pages/home';
-import {Provider} from 'react-redux'
+import HooksTest from './pages/hooksTest';
+import {Provider} from 'react-redux';
 
 function FadingRoute({ component: Component, ...rest }) {
   return (
@@ -26,6 +27,7 @@ export default function App(props) {
           <Switch>
                 <FadingRoute path="/login" component={Login}/>
                 <FadingRoute path="/home" component={Home}/>
+                <FadingRoute path="/hooksTest" component={HooksTest}/>
             </Switch>
         </Router>
     </Provider>

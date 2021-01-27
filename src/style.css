@@ -1,12 +1,3 @@
 .hello{
     color: red
 }
-
-/* example input: */
-.width{
-    /* px-to-viewport-ignore-next */
-    width: 10px;
-    padding: 10px;
-    height: 10px; /* px-to-viewport-ignore */
-    border: solid 2px #000; /* px-to-viewport-ignore */
-}
